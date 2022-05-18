@@ -1,0 +1,138 @@
+.item {
+    background-color: #f00;
+    color: #fff;
+
+    text-align: center;
+}
+
+.step {
+    margin-bottom: 30px;
+}
+
+.step-one {
+    .grid {
+        display: grid;
+    }
+}
+
+.step-two {
+    .grid {
+        display: inline-grid;
+    }
+}
+
+.step-three {
+    .grid {
+        display: grid;
+        grid-template-rows: 50px 100px;
+    }
+}
+
+.step-four {
+    .grid {
+        display: grid;
+        grid-template-columns: 90px 50px 120px;
+    }
+}
+
+.step-five {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+
+.step-six {
+    .grid {
+        display: grid;
+        grid-template-columns: 3rem 25% 1fr 2fr;
+    }
+}
+
+.step-seven {
+    .grid {
+        display: grid;
+        grid-template-rows: minmax(100px, auto);
+        grid-template-columns: minmax(auto, 50%) 1fr 3em;
+    }
+}
+
+.step-eight {
+    .grid {
+        display: grid;
+        grid-template-rows: repeat(4, 100px);
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.step-nine {
+    .grid {
+        display: grid;
+        grid-template-columns: 30px repeat(3, 1fr) 30px;
+    }
+}
+
+.step-ten {
+    .grid {
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 5rem;
+        //shorthand grip-gap: (n)px (n)px;
+    }
+}
+
+.step-eleven {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .item:first-child {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+            /* shorthand
+            grid-row: 2;
+            grid-column: 3 / 4;
+
+            // or
+
+            grid-area: 2 / 2 / 3 / 3;
+            */
+        }
+    }
+}
+
+.step-twelve {
+    .grid {
+        display: grid;
+
+        .item:first-child {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    }
+}
+
+.step-thirteen {
+    .grid {
+        display: grid;
+
+        .item:first-child {
+            grid-row: 2/5;
+            grid-column: 2/4;
+        }
+    }
+}
+
+.step-fourteen {
+    .grid {
+        display: grid;
+
+        .item:first-child {
+            grid-row: 2 / span 3;
+            grid-column: span 2;
+        }
+    }
+}
